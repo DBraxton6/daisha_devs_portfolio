@@ -21,13 +21,122 @@
   <body>
 
     <header>
-      
+      <a href="index.html"><b id="daishaLogo">daisha</b><b id="devsLogo">devs</b></a>
+      <nav>
+        <ul>
+          <li><a href="index.html">home</a></li>
+          <li><a href="#about">about</a></li>
+          <li><a href="#projects">projects</a></li>
+          <li><a href="#skills">skills</a></li>
+          <li><a href="contact.html" >contact</a></li>
+          <li id="mode"><img src="./images/moon.png" atl="light-dark mode button"></li>
+        </ul>
+      </nav>
     </header>
 
+    <div class="main-content">
+      <h1 class="indexH1 newSection">Hi, I'm <b id="daisha">Daisha, </b>full stack web <b id="developer"> developer, </b><b id="creative">creative,</b> and <b id="pSolver">problem solver.</b></h1>
+      <h2 id="about">Meet Me</h2>
+      <div class="aboutMe newSection">
+        <img src="./images/me.jpg" alt="photo of Daisha">
+        <p>Short description about me, include how I got into web dev, schooling, certifications, etc. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
+
+      <div class="projects newSection" id="projects">
+        <h2>Check Out Some of My Projects</h2>
+        <div class="project">
+          <img src="./images/granduer_getaways.JPG" alt="pretend business website screenshot" class="myWorkImg">
+          <div class="title-descr">
+            <h3><a href="https://dbraxton6.github.io/Codecademy-Course-Projects/flexbox-business-site-starting/index.html">Granduer Getaways</a></h3>
+            <p>A pretend business website I created to help hone my skills. It is currently a static website using just HTML and CSS.</p>
+            <div class="projectBtns">
+              <a href="https://dbraxton6.github.io/Codecademy-Course-Projects/flexbox-business-site-starting/index.html" target="_blank" class="btn">Live Site</a>
+              <a href="https://github.com/DBraxton6/Codecademy-Course-Projects/tree/main/flexbox-business-site-starting" target="_blank" class="btn">Github Repo</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project">
+          <div class="title-descr">
+            <h3><a href="https://dbraxton6.github.io/Codecademy-Course-Projects/web_design_system/index.html">Website Style Guide</a></h3>
+            <p>An extremely beginner and static website using HTML and CSS. It's main purpose was to give myself a guideline for the design and style of a future webpage. My skills and style have since increased drastically. It's fun to watch your work improve!</p>
+            <div class="projectBtns">
+              <a href="https://dbraxton6.github.io/Codecademy-Course-Projects/web_design_system/index.html" target="_blank" class="btn">Live Site</a>
+              <a href="https://github.com/DBraxton6/Codecademy-Course-Projects/tree/main/web_design_system" target="_blank" class="btn">Github Repo</a>
+            </div>
+          </div>
+          <img src="./images/style_guide.JPG" alt="website style-guide screenshot" class="myWorkImg">
+        </div>
+      
+        <div class="project">
+          <img src="./images/webdev_portfolio.JPG" alt="web dev portfolio screenshot" class="myWorkImg">
+          <div class="title-descr">
+            <h3>Daisha Devs Portfolio</h3>
+            <p>You guessed it. This site was developed and designed by yours truly using a combination of HTML, CSS, and Javascript. Here is where I plan to showcase my skills and other projects I am working on.</p>
+            <div class="projectBtns">
+              <a href="index.html" target="_blank" class="btn">Live Site</a>
+              <a href="https://github.com/DBraxton6/daisha_devs_portfolio" target="_blank" class="btn">Github Repo</a>
+            </div>
+          </div>
+        </div>
+      
+        <div class="project">
+          <div class="title-descr">
+            <h3><a href="https://github.com/DBraxton6/The-Lost-Survivor-GBA-Game/blob/master/README.md">The Lost Survivor GBA Game</a></h3>
+            <p>Not web design but a project I'm proud of nonetheless. This is a Gameboy Advance game I developed in 2017 using C. It has its fair share of bugs, but I learned a ton!</p>
+            <div class="projectBtns">
+              <a href="https://github.com/DBraxton6/The-Lost-Survivor-GBA-Game" target="_blank" class="btn">Github Repo</a>
+            </div>
+          </div>
+          <video class="myWorkImg" id="lostSurvImg" controls poster="./images/lostSurvivor.JPG">
+            <source src="./lostSurvivor_screencast.mp4" type="video/mp4">
+            Your browser does not support this video.
+          </video>
+        </div>
+      </div>
+        
+
+      
+      <div class="skills-tech newSection">
+        <h2 id="skills">Skills & Technologies</h2>
+        <h3>Here's what's in my toolkit:</h3>
+        <div class="skills-toolkits">
+          <div class="skill">
+            <img src="./images/html.png" alt="HTML logo">
+            <p>HTML 5</p>
+          </div>
+          <div class="skill">
+            <img src="./images/css.png" alt="CSS logo">
+            <p>CSS 3</p>
+          </div>
+          <div class="skill">
+            <img src="./images/js.png" alt="JavaScript logo">
+            <p>JavaScript</p>
+          </div>
+          <div class="skill">
+            <img src="./images/git.png" alt="Git logo">
+            <p>Git</p>
+          </div>
+          <div class="skill">
+            <img src="./images/github.png" alt="Github logo">
+            <p>Github</p>
+          </div>
+          <div class="skill">
+            <img src="./images/commandLine.png" alt="Command Line logo">
+            <p>Command Line</p>
+          </div>
+          <div class="skill">
+            <img src="./images/vsCode.png" alt="Visual Studio Code logo">
+            <p>Visual Studio Code</p>
+          </div>
+        </div>
+      </div>
+    </div>
 
 
     <footer>
-      <span class="copyright">© 2023, All Rights Reserved </span></span>
+      <span class="copyright">© 2023 Daisha Devs Portfolio, All Rights Reserved </span>
+      <span class="disclaimer"> Photos courtesy of <a href="https://unsplash.com/">Unsplash</a> & Google Images</span>
     </footer>
     
   </body>

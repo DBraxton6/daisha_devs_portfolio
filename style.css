@@ -1,0 +1,208 @@
+/* light-mode colors */
+/* 
+#516C5F -- headers
+#9EA396 -- text
+#E3DEDA -- background color 
+#D3C0B6 -- accent 
+*/
+
+/* dark-mode colors */
+/* 
+#272727 -- background color
+#D3C0B6 -- headers
+#E3DEDA -- text
+#9EA396 or #516C5F -- accent
+*/
+
+footer {
+    margin-top: 10rem;
+    padding: 1.875rem;
+    background-color:rgb(211, 192, 182, 0.1);
+    color:#516C5F;
+    /* font-family: 'Metal', cursive; */
+}
+
+footer a {
+    color:#516C5F;
+}
+
+html {
+    background-color: #E3DEDA;
+    font-size: 16px;
+}
+
+h2 {
+    font-size: 3rem;
+    color: #516c5f;
+    margin: 1rem 0 1rem 1rem;
+}
+
+h3, h3 a {
+    font-size: 2rem;
+    color: #516C5F;
+}
+
+header {
+    display: block;
+    padding: 1rem;
+}
+
+header nav {
+    float: right;
+}
+
+header nav ul {
+    display: flex;
+    font-size: 1.5rem;
+}
+
+header nav ul li a{
+    padding-left: 1rem;
+    padding-right: 1rem;
+    color:#516C5F;
+}
+
+header nav ul li a:hover{
+    padding-left: 1rem;
+    padding-right: 1rem;
+    color:#9EA396;
+}
+
+.aboutMe {
+    display: inline-flex;
+}
+
+.aboutMe img {
+    width: 17rem;
+    height: 17rem;
+    border-radius: 50%;
+    border: #D3C0B6 ridge 1.25rem;
+    margin: 0 10%;
+}
+
+.aboutMe p {
+    float: right;
+    border-left: #D3C0B6 solid 0.5rem;
+    padding: 4rem 5rem 0;
+    color:#9EA396;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.btn {
+    background-color: #D3C0B6;
+    color: #516C5F;
+    padding: 0.5rem;
+}
+
+.btn:hover {
+    color:#9EA396;
+}
+
+.disclaimer {
+    float: right;
+}
+
+.indexH1 {
+    font-size: 6.5rem;
+    color: #516C5F;
+    padding: 1rem;
+    margin: 1.5rem;
+}
+
+.myWorkImg {
+    height: 25rem;
+    width: 38rem;
+    border: #D3C0B6 outset 0.3125rem;
+    border-radius: 10%;
+}
+
+.newSection {
+    margin-bottom: 5rem;
+}
+
+.project {
+    display: inline-flex;
+    margin: 3rem;
+}
+
+.projectBtns {
+    margin-top: 3rem;
+}
+
+
+
+.project p {
+    font-size: 1rem;
+    color: #9EA396;
+    font-weight: 600;
+}
+
+.skill {
+    margin: 1rem 0;
+    text-align: center;
+    
+}
+
+.skill img{
+    height: 8rem;
+    width: 8rem;
+}
+
+.skill p {
+    color:#516C5F;
+    font-weight: 500;
+    margin-top: 2rem;
+    font-size: 1.5rem;
+}
+
+.skills-tech h3 {
+    margin-left: 1rem;
+}
+
+.skills-toolkits {
+    display: inline-flex;
+    margin: 1.5rem 0;
+    width: 100%;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.title-descr {
+    padding: 0 5rem;
+}
+
+.title-descr a {
+    font-size: 1.5rem;
+}
+
+
+
+#daisha, #developer, #pSolver, #creative{
+    color: #9EA396;
+}
+
+#daishaLogo {
+    color:#516C5F;
+    font-size: 1.5rem;
+}
+
+#devsLogo {
+    color:#9EA396;
+    font-size: 1.5rem;
+}
+
+
+#mode img {
+    width: 2rem;
+    height: 1.5rem;
+}
+
+#lostSurvImg {
+    object-fit: cover;
+}
+
+
+
+
+
