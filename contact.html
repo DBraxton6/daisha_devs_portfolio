@@ -21,13 +21,64 @@
   <body>
 
     <header>
-      
+      <a href="index.html"><b id="daishaLogo">daisha</b><b id="devsLogo">devs</b></a>
+      <nav>
+        <ul>
+          <li><a href="index.html">home</a></li>
+          <li><a href="index.html#about">about</a></li>
+          <li><a href="index.html#projects">projects</a></li>
+          <li><a href="index.html#skills">skills</a></li>
+          <li><a href="contact.html" >contact</a></li>
+          <li id="mode"><img src="./images/moon.png" atl="light-dark mode button"></li>
+        </ul>
+      </nav>
     </header>
 
+    <div class="main-content">
+      <h1>Contact Me</h1>
+      <div class="contact-content">
+        <div>  
+          <form action="https://formspree.io/f/mvonaywb" method="POST">
+            <section class="name">
+              <label for="name">Name:* </label><br>
+              <input type="text" name="name" id="name" required>
+            </section>
+            
+            <section class="email">
+              <label for="name">Email:* </label><br>
+              <input type="text" name="email" id="email" required pattern="[A-z]+@[a-z]+\.[a-z]+">
+            </section>
+            
+            <section class="msg-info"><br>
+              <label for="message">Message:* </label>
+              <br>
+              <textarea id="message" name="message" required></textarea>
+            </section>
+
+            <section class="submission">
+              <input type="submit" value="Submit">
+            </section>
+          </form>
+        </div>
+        <div>
+          <img src="./images/me.jpg" alt="animated photo of me" id="meImg">
+        </div>
+      </div>
+      <div class="socialMedia">
+        <h2>Find Me Online</h2>
+        <div class="socialImgs">
+          <a href="https://github.com/DBraxton6" target="_blank"><img src="./images/github.png"  alt="Github logo"></a>
+          <a href="https://www.linkedin.com/in/daisha-braxton-5a338019/"><img src="./images/linkedin.png" alt="LinkedIn logo"></a>
+          <a href="instagram.com"><img src="./images/instagram.png" alt="Instagram logo"></a>
+          <a href="twitter.com"><img src="./images/twitter.png" alt="Twitter logo"></a>
+        </div>
+      </div>
+    </div>
 
 
     <footer>
-      <span class="copyright">© 2023, All Rights Reserved </span></span>
+      <span class="copyright">© 2023 Daisha Devs Portfolio, All Rights Reserved </span>
+      <span class="disclaimer"> Photos courtesy of <a href="https://unsplash.com/">Unsplash</a> & Google Images</span>
     </footer>
     
   </body>

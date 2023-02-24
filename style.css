@@ -31,6 +31,13 @@ html {
     font-size: 16px;
 }
 
+h1 {
+    font-size: 6.5rem;
+    color: #516C5F;
+    padding: 1rem;
+    margin: 1rem;
+}
+
 h2 {
     font-size: 3rem;
     color: #516c5f;
@@ -68,6 +75,22 @@ header nav ul li a:hover{
     color:#9EA396;
 }
 
+label {
+    font-size: 1.5rem;
+    color:#516C5F;
+}
+
+section {
+    margin: 1rem;
+    display: block;
+}
+
+textarea {
+    height: 20rem;
+    width: 23rem;
+
+}
+
 .aboutMe {
     display: inline-flex;
 }
@@ -99,16 +122,24 @@ header nav ul li a:hover{
     color:#9EA396;
 }
 
+.contact-content {
+    display: inline-flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
 .disclaimer {
     float: right;
 }
 
-.indexH1 {
+/* .indexH1 {
     font-size: 6.5rem;
     color: #516C5F;
     padding: 1rem;
     margin: 1.5rem;
-}
+} */
+
+
 
 .myWorkImg {
     height: 25rem;
@@ -168,6 +199,35 @@ header nav ul li a:hover{
     flex-wrap: wrap;
 }
 
+.socialImgs {
+    display: inline-flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.socialImgs img{
+    height: 8rem;
+    width: 8rem;
+}
+
+.socialMedia {
+    margin-top: 5rem;
+}
+
+.submission input{
+    background-color: #D3C0B6;
+    color:#516C5F;
+    font-size: 2rem;
+    border: #D3C0B6 solid 0.0625rem;
+    border-radius: 10%;
+}
+
+.submission input:hover{
+    background-color: #D3C0B6;
+    color:#9EA396;
+    cursor: pointer;
+}
+
 .title-descr {
     padding: 0 5rem;
 }
@@ -190,6 +250,13 @@ header nav ul li a:hover{
 #devsLogo {
     color:#9EA396;
     font-size: 1.5rem;
+}
+
+#meImg {
+    height: 31.25rem;
+    width: 31.25rem;
+    border: #D3C0B6 outset 0.25rem;
+    border-radius: 15%;
 }
 
 
