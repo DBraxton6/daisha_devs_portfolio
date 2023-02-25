@@ -26,9 +26,15 @@ footer a {
     color:#516C5F;
 }
 
+hr {
+    color: #516C5F;
+    font-size: 10rem;
+}
+
 html {
     background-color: #E3DEDA;
     font-size: 16px;
+    font-family: 'Gloock', serif;
 }
 
 h1 {
@@ -44,6 +50,10 @@ h2 {
     margin: 1rem 0 1rem 1rem;
 }
 
+h3 {
+    margin-bottom: 0.5rem;
+}
+
 h3, h3 a {
     font-size: 2rem;
     color: #516C5F;
@@ -52,6 +62,7 @@ h3, h3 a {
 header {
     display: block;
     padding: 1rem;
+    /* width: 100%; */
 }
 
 header nav {
@@ -73,6 +84,13 @@ header nav ul li a:hover{
     padding-left: 1rem;
     padding-right: 1rem;
     color:#9EA396;
+}
+
+input, textarea {
+    background-color: #E3DEDA;
+    color: #516C5F;
+    border: #D3C0B6 outset 0.1875rem;
+    margin-top: 0.5rem;
 }
 
 label {
@@ -106,10 +124,10 @@ textarea {
 .aboutMe p {
     float: right;
     border-left: #D3C0B6 solid 0.5rem;
-    padding: 4rem 5rem 0;
+    padding: 1rem 5rem 1rem;
     color:#9EA396;
     font-size: 1rem;
-    font-weight: 600;
+    line-height: 1.25rem;
 }
 
 .btn {
@@ -126,6 +144,12 @@ textarea {
     display: inline-flex;
     width: 100%;
     justify-content: space-around;
+}
+
+.contactImgText p{
+    color:#9EA396;
+    margin-bottom: 1rem;
+    text-align: center;
 }
 
 .disclaimer {
@@ -161,16 +185,28 @@ textarea {
     margin-top: 3rem;
 }
 
-
+.projectBtns a{
+    margin: 0.25rem;
+    border-radius: 5%;
+}
 
 .project p {
     font-size: 1rem;
     color: #9EA396;
-    font-weight: 600;
+}
+
+.projectSkills {
+    display: inline-flex;
+}
+
+.projectSkills img{
+    width: 2rem;
+    height: 2rem;
+    margin: 1rem 0.15rem 0;
 }
 
 .skill {
-    margin: 1rem 0;
+    margin: 1rem;
     text-align: center;
     
 }
@@ -182,13 +218,20 @@ textarea {
 
 .skill p {
     color:#516C5F;
-    font-weight: 500;
     margin-top: 2rem;
     font-size: 1.5rem;
 }
 
+
+
 .skills-tech h3 {
     margin-left: 1rem;
+}
+
+.skills-tech p {
+    color:#9EA396;
+    font-size: 1.5rem;
+    margin: 1rem;
 }
 
 .skills-toolkits {
@@ -218,8 +261,8 @@ textarea {
     background-color: #D3C0B6;
     color:#516C5F;
     font-size: 2rem;
-    border: #D3C0B6 solid 0.0625rem;
-    border-radius: 10%;
+    border: #D3C0B6 outset 0.0625rem;
+    border-radius: 5%;
 }
 
 .submission input:hover{
@@ -263,6 +306,11 @@ textarea {
 #mode img {
     width: 2rem;
     height: 1.5rem;
+    
+}
+
+#mode img:hover {
+    cursor: pointer;
 }
 
 #lostSurvImg {

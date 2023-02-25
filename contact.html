@@ -5,10 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- tab icon -->
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="./images/dd_icon.png" type="image/x-icon">
 
     <!-- fonts -->
-    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gloock&display=swap" rel="stylesheet">
 
     <!-- stylesheet(s) -->
     <link rel="stylesheet" href="reset.css">
@@ -40,31 +42,33 @@
         <div>  
           <form action="https://formspree.io/f/mvonaywb" method="POST">
             <section class="name">
-              <label for="name">Name:* </label><br>
-              <input type="text" name="name" id="name" required>
+              <label for="name">Name* </label><br>
+              <input type="text" name="name" id="name" required placeholder="Jane Doe">
             </section>
             
             <section class="email">
-              <label for="name">Email:* </label><br>
-              <input type="text" name="email" id="email" required pattern="[A-z]+@[a-z]+\.[a-z]+">
+              <label for="name">Email* </label><br>
+              <input type="text" name="email" id="email" required pattern="[A-z]+@[a-z]+\.[a-z]+" placeholder="janedoe@email.com">
             </section>
             
             <section class="msg-info"><br>
-              <label for="message">Message:* </label>
+              <label for="message">Message* </label>
               <br>
-              <textarea id="message" name="message" required></textarea>
+              <textarea id="message" name="message" required placeholder="Hello! Love your work!"></textarea>
             </section>
 
             <section class="submission">
-              <input type="submit" value="Submit">
+              <input type="submit" value="Send Email">
             </section>
           </form>
         </div>
-        <div>
+        <div class="contactImgText">
+          <p>Want to say hello? Ask a question? Send a compliment? Shoot me a message! <br><br>Looking forward to hearing from you!</p>
           <img src="./images/me.jpg" alt="animated photo of me" id="meImg">
         </div>
       </div>
       <div class="socialMedia">
+        <hr>
         <h2>Find Me Online</h2>
         <div class="socialImgs">
           <a href="https://github.com/DBraxton6" target="_blank"><img src="./images/github.png"  alt="Github logo"></a>
@@ -78,11 +82,11 @@
 
     <footer>
       <span class="copyright">© 2023 Daisha Devs Portfolio, All Rights Reserved </span>
-      <span class="disclaimer"> Photos courtesy of <a href="https://unsplash.com/">Unsplash</a> & Google Images</span>
+      <span class="disclaimer"> Icons courtesy of Google Images</span>
     </footer>
     
   </body>
 
-  <script src="script.js"></script>
+  <script src="./script.js"></script>
   
 </html>

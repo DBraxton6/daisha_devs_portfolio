@@ -16,21 +16,20 @@
 
 let mode = 'light';
 
-let changeMode = (element) => {
+function changeMode () {
     // change items to dark mode
     if (mode === 'light') {
-        element.style.backgroundColor('#272727');
+        document.getElementsByTagName('html')[0].style.backgroundColor = '#272727';
         
-        mode = 'dark'
+        mode = 'dark';
+    } else if (mode === 'dark') { // change items to light mode
+        document.getElementsByTagName('html')[0].style.backgroundColor = '#E3DEDA';
+        
+        mode = 'light';
     }
+};
 
 
-    // change items to light mode
-    if (mode === 'dark') {
-        element.style.backgroundColor('#E3DEDA');
-        
-        mode = 'light'
-    }
-}
+
 
 document.getElementById('mode').onclick = changeMode;
