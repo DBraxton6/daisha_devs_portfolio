@@ -5,31 +5,8 @@
 #E3DEDA -- background color 
 #D3C0B6 -- accent 
 */
+function addDarkmodeWidget() {
+    new Darkmode().showWidget();
+}
+window.addEventListener('load', addDarkmodeWidget);
 
-/* dark-mode colors */
-/* 
-#272727 -- background color
-#D3C0B6 -- headers
-#E3DEDA -- text
-#9EA396 or #516C5F -- accent
-*/
-
-let mode = 'light';
-
-function changeMode () {
-    // change items to dark mode
-    if (mode === 'light') {
-        document.getElementsByTagName('html')[0].style.backgroundColor = '#272727';
-        
-        mode = 'dark';
-    } else if (mode === 'dark') { // change items to light mode
-        document.getElementsByTagName('html')[0].style.backgroundColor = '#E3DEDA';
-        
-        mode = 'light';
-    }
-};
-
-
-
-
-document.getElementById('mode').onclick = changeMode;

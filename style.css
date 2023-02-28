@@ -6,13 +6,6 @@
 #D3C0B6 -- accent 
 */
 
-/* dark-mode colors */
-/* 
-#272727 -- background color
-#D3C0B6 -- headers
-#E3DEDA -- text
-#9EA396 or #516C5F -- accent
-*/
 
 footer {
     margin-top: 10rem;
@@ -152,6 +145,63 @@ textarea {
     text-align: center;
 }
 
+.darkmode--activated p, .darkmode--activated .title-descr p, .darkmode--activated .skills-toolkits p {
+    color: #3a4d43;
+}
+
+
+.darkmode--activated .accessibility {
+    content: url("./images/web_accessibility2.png");
+}
+
+.darkmode--activated .cmdLine {
+    content: url("./images/commandLine2.png");
+}
+
+.darkmode--activated .c {
+    content: url("./images/c2.png");
+}
+
+.darkmode--activated .css {
+    content: url("./images/css2.png");
+}
+
+.darkmode--activated .git {
+    content: url("./images/git2.png");
+}
+
+.darkmode--activated .github {
+    content: url("./images/github2.png");
+}
+
+.darkmode--activated .html {
+    content: url("./images/html2.png");
+}
+
+.darkmode--activated .ig {
+    content: url("./images/instagram2.png");
+}
+
+.darkmode--activated .js {
+    content: url("./images/js2.png");
+}
+
+.darkmode--activated .linkedin {
+    content: url("./images/linkedin2.png");
+}
+
+.darkmode--activated .responsive {
+    content: url("./images/responsive_web2.png");
+}
+
+.darkmode--activated .twitter {
+    content: url("./images/twitter2.png");
+}
+
+.darkmode--activated .vscode {
+    content: url("./images/vsCode2.png");
+}
+
 .disclaimer {
     float: right;
 }
@@ -162,6 +212,8 @@ textarea {
     padding: 1rem;
     margin: 1.5rem;
 } */
+
+
 
 
 
@@ -303,7 +355,7 @@ textarea {
 }
 
 
-#mode img {
+/* #mode img {
     width: 2rem;
     height: 1.5rem;
     
@@ -311,10 +363,11 @@ textarea {
 
 #mode img:hover {
     cursor: pointer;
-}
+} */
 
 #lostSurvImg {
     object-fit: cover;
+    isolation: isolate;
 }
 
 
