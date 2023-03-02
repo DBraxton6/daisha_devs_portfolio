@@ -28,6 +28,7 @@ html {
     background-color: #E3DEDA;
     font-size: 16px;
     font-family: 'Gloock', serif;
+    width: 100%;
 }
 
 h1 {
@@ -56,7 +57,7 @@ h3, h3 a {
 header {
     display: block;
     padding: 1rem;
-    /* width: 100%; */
+    width: 100%;
 }
 
 header nav {
@@ -352,6 +353,39 @@ textarea {
 }
 
 
+/* *********** MEDIA QUERIES *********** */
+/* Styling for mobile */
+@media only screen and (max-width: 38.5rem) {
 
+}
+
+
+/* Styling for tablet */
+@media (max-width: 48rem) {
+    html {
+        width:fit-content
+    }
+    
+    header nav ul li {
+        font-size: 1rem;
+    }
+
+    header nav ul li a {
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
+
+    h1 {
+        font-size: 5.5rem;
+    }
+
+    #daishaLogo {
+        font-size: 1rem;
+    }
+
+    #devsLogo {
+        font-size: 1rem;
+    }
+}
 
 
