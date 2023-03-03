@@ -439,7 +439,7 @@ textarea {
 
 
 /* Styling for tablet */
-@media (min-width: 426px) and (max-width: 769px) {
+@media (min-width: 426px) and (max-width: 768px) {
 
     .project {
         margin: 1.5rem;
@@ -475,6 +475,11 @@ textarea {
        font-size: 4rem;
    }
 
+    
+    .aboutMe {
+        display: block;
+    }
+
     .aboutMe img {
         height: 13.25rem;
         width: 13.25rem;
@@ -505,7 +510,7 @@ textarea {
 
 
 /* Styling for Laptop - 1024px */
-@media (min-width: 769px) and (max-width: 1025px) {
+@media (min-width: 768px) and (max-width: 1025px) {
     .project {
         margin: 1.5rem 1.5rem 6rem;
     }
