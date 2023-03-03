@@ -136,7 +136,7 @@ textarea {
 .contact-content {
     display: inline-flex;
     width: 100%;
-    justify-content: space-around;
+    /* flex-direction: column-reverse; */
 }
 
 .contactImgText p{
@@ -369,8 +369,105 @@ textarea {
 
 
 /* *********** MEDIA QUERIES *********** */
-/* Styling for mobile */
-@media (max-width: 426px) {
+/*Styling for mobile -- 320px  */
+@media (max-width: 320px) {
+
+    .project {
+        margin: 1rem 1rem 10rem 1rem;
+        display: block;
+    }
+    
+    .projectBtns a{
+        margin: 0.25rem;
+        border-radius: 5%;
+        font-size: 1rem;
+    }
+    
+    .projectSkills img{
+        width: 1rem;
+        height: 1rem;
+    }
+    
+    header nav {
+/*         display: none; */
+        font-size: 0.70rem
+    }
+    
+    
+    h1 {
+       font-size: 2.5rem;
+    }
+
+    .aboutMe {
+        display: block;
+    }
+
+    .aboutMe img {
+        height: 13.25rem;
+        width: 13.25rem;
+        margin: 0 20%;
+    }
+
+    .aboutMe p {
+        border: none;
+    }
+
+
+    .myWorkImg {
+        width: 23rem;
+        height: 14rem;
+    }
+
+    .title-descr {
+        padding: 0 1rem;
+        margin: 2rem 0 2rem 0;
+    }
+
+    .skill img {
+        height: 12rem;
+        width: 12rem;
+    }
+
+    .disclaimer {
+        display: none;
+    }
+
+    footer {
+        padding: 1rem;
+    }
+
+    #meImg {
+        width: 17rem;
+        height: 17rem;
+        margin-left: 6%;
+    }
+
+    textarea {
+        height: 13rem;
+        width: 17.5rem;
+    }
+
+    .contact-content {
+        flex-direction: column-reverse;
+    }
+
+    .socialImgs img{
+        height: 3rem;
+        width: 3rem;
+    }
+
+    .copyright {
+        font-size: 0.75rem;
+    }
+
+    .darkmode-toggle {
+        right: 4rem !important;
+        bottom: 3rem !important;
+    }
+}
+
+/*Styling for mobile -- 375px  */
+@media (min-width: 320px) and (max-width: 375px) {
 
     .project {
         margin: 1rem 1rem 10rem 1rem;
@@ -435,11 +532,123 @@ textarea {
     footer {
         padding: 1rem;
     }
+
+    #meImg {
+        width: 18rem;
+        height: 18rem;
+        margin-left: 4%
+    }
+
+    textarea {
+        height: 13rem;
+        width: 21rem;
+    }
+
+    .contact-content {
+        flex-direction: column-reverse;
+    }
+
+    .socialImgs img{
+        height: 5rem;
+        width: 5rem;
+    }
+
+    .darkmode-toggle {
+        right: 1rem !important;
+        bottom: 3rem !important;
+    }
+}
+
+/* Styling for mobile -- 425px*/
+@media (min-width: 375px) and (max-width: 425px) {
+
+    .project {
+        margin: 1rem 1rem 10rem 1rem;
+        display: block;
+    }
+    
+    .projectBtns a{
+        margin: 0.25rem;
+        border-radius: 5%;
+        font-size: 1rem;
+    }
+    
+    .projectSkills img{
+        width: 1rem;
+        height: 1rem;
+    }
+    
+    header nav {
+/*         display: none; */
+        font-size: 0.70rem
+    }
+    
+    
+    h1 {
+       font-size: 3.75rem;
+    }
+
+    .aboutMe {
+        display: block;
+    }
+
+    .aboutMe img {
+        height: 13.25rem;
+        width: 13.25rem;
+        margin: 0 20%;
+    }
+
+    .aboutMe p {
+        border: none;
+    }
+
+
+    .myWorkImg {
+        width: 23rem;
+        height: 14rem;
+    }
+
+    .title-descr {
+        padding: 0 1rem;
+        margin: 2rem 0 2rem 0;
+    }
+
+    .skill img {
+        height: 12rem;
+        width: 12rem;
+    }
+
+    .disclaimer {
+        display: none;
+    }
+
+    footer {
+        padding: 1rem;
+    }
+
+    #meImg {
+        width: 19rem;
+        height: 19rem;
+        margin-left: 10%
+    }
+
+    textarea {
+        height: 13rem;
+    }
+
+    .contact-content {
+        flex-direction: column-reverse;
+    }
+
+    .socialImgs img{
+        height: 5rem;
+        width: 5rem;
+    }
 }
 
 
 /* Styling for tablet */
-@media (min-width: 426px) and (max-width: 768px) {
+@media (min-width: 425px) and (max-width: 768px) {
 
     .project {
         margin: 1.5rem;
@@ -457,8 +666,8 @@ textarea {
     }
     
     header nav ul {
-    display: flex;
-    font-size: 1rem;
+        display: flex;
+        font-size: 1rem;
     }
     
     header nav ul li a{
@@ -506,18 +715,27 @@ textarea {
         width: 12rem;
     }
 
+    #meImg {
+        width: 21rem;
+        height: 21rem;
+    }
+
+    textarea {
+        height: 13rem;
+    }
+
 }
 
 
 /* Styling for Laptop - 1024px */
-@media (min-width: 768px) and (max-width: 1025px) {
+@media (min-width: 768px) and (max-width: 1024px) {
     .project {
         margin: 1.5rem 1.5rem 6rem;
     }
     
     header nav ul {
-    display: flex;
-    font-size: 1rem;
+        display: flex;
+        font-size: 1rem;
     }
     
     header nav ul li a{
