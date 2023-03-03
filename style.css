@@ -28,7 +28,6 @@ html {
     background-color: #E3DEDA;
     font-size: 16px;
     font-family: 'Gloock', serif;
-    width: 100%;
 }
 
 h1 {
@@ -39,9 +38,9 @@ h1 {
 }
 
 h2 {
-    font-size: 3rem;
+    font-size: 2.5rem;
     color: #516c5f;
-    margin: 1rem 0 3rem 1rem;
+    margin: 1rem 0 3rem 0;
     text-align: center;
 }
 
@@ -55,29 +54,27 @@ h3, h3 a {
 }
 
 header {
-    display: block;
-    padding: 1rem;
-    width: 100%;
+    display: flex;
+    /* padding: 1rem; */
+    /* width: 100%; */
+    margin: 1rem;
 }
 
-header nav {
-    float: right;
-}
+header nav {margin-left: auto;/* display: none; */}
 
 header nav ul {
     display: flex;
-    font-size: 1.5rem;
+    /* font-size: 1.5rem; */
 }
 
 header nav ul li a{
     padding-left: 1rem;
-    padding-right: 1rem;
+    /*     padding-right: 1rem; */
     color:#516C5F;
 }
 
 header nav ul li a:hover{
-    padding-left: 1rem;
-    padding-right: 1rem;
+    font-size: 1.65rem;
     color:#9EA396;
 }
 
@@ -117,9 +114,10 @@ textarea {
 }
 
 .aboutMe p {
-    float: right;
+    /* float: right; */
     border-left: #D3C0B6 solid 0.5rem;
-    padding: 1rem 5rem 1rem;
+    margin: 1rem 5rem 1rem 0;
+    padding: 0 0 0 5rem;
     color:#9EA396;
     font-size: 1rem;
     line-height: 1.25rem;
@@ -204,10 +202,26 @@ textarea {
 .darkmode--activated .vscode {
     content: url("./images/vsCode2.png");
 }
+
+.darkmode-toggle {
+    z-index: 500;
+}
+
 /* styling for dark mode end */
 
 .disclaimer {
     float: right;
+}
+
+.h1Highlight{
+    color: #9EA396;
+    /* transition: margin-right 2s ease-in-out; */
+}
+
+.h1Highlight:hover {
+    /* font-size: 6rem; */
+    /* text-decoration: underline; */
+    transition: margin-right 2s ease-in-out;
 }
 
 .myWorkImg {
@@ -219,6 +233,7 @@ textarea {
 
 .newSection {
     margin-bottom: 5rem;
+    /* width: fit-content; */
 }
 
 .project {
@@ -227,7 +242,7 @@ textarea {
 }
 
 .projectBtns {
-    margin-top: 3rem;
+    margin-top: 2rem;
 }
 
 .projectBtns a{
@@ -242,6 +257,8 @@ textarea {
 
 .projectSkills {
     display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
 .projectSkills img{
@@ -322,13 +339,11 @@ textarea {
     padding: 0 5rem;
 }
 
-.title-descr a {
+.title-descr h3{
     font-size: 1.5rem;
 }
 
-#daisha, #developer, #pSolver, #creative{
-    color: #9EA396;
-}
+
 
 #daishaLogo {
     color:#516C5F;
@@ -355,37 +370,193 @@ textarea {
 
 /* *********** MEDIA QUERIES *********** */
 /* Styling for mobile */
-@media only screen and (max-width: 38.5rem) {
+@media (max-width: 426px) {
 
+    .project {
+        margin: 1rem 1rem 10rem 1rem;
+        display: block;
+    }
+    
+    .projectBtns a{
+        margin: 0.25rem;
+        border-radius: 5%;
+        font-size: 1rem;
+    }
+    
+    .projectSkills img{
+        width: 1rem;
+        height: 1rem;
+    }
+    
+    header nav {
+/*         display: none; */
+        font-size: 0.70rem
+    }
+    
+    
+    h1 {
+       font-size: 3.75rem;
+    }
+
+    .aboutMe {
+        display: block;
+    }
+
+    .aboutMe img {
+        height: 13.25rem;
+        width: 13.25rem;
+        margin: 0 20%;
+    }
+
+    .aboutMe p {
+        border: none;
+    }
+
+
+    .myWorkImg {
+        width: 23rem;
+        height: 14rem;
+    }
+
+    .title-descr {
+        padding: 0 1rem;
+        margin: 2rem 0 2rem 0;
+    }
+
+    .skill img {
+        height: 12rem;
+        width: 12rem;
+    }
+
+    .disclaimer {
+        display: none;
+    }
+
+    footer {
+        padding: 1rem;
+    }
 }
 
 
 /* Styling for tablet */
-@media (max-width: 48rem) {
-    html {
-        width:fit-content
+@media (min-width: 426px) and (max-width: 769px) {
+
+    .project {
+        margin: 1.5rem;
     }
     
-    header nav ul li {
+    .projectBtns a{
+        margin: 0.25rem;
+        border-radius: 5%;
         font-size: 1rem;
     }
-
-    header nav ul li a {
-        padding-left: 0.5rem;
-        padding-right: 0.5rem;
+    
+    .projectSkills img{
+        width: 1rem;
+        height: 1rem;
     }
-
+    
+    header nav ul {
+    display: flex;
+    font-size: 1rem;
+    }
+    
+    header nav ul li a{
+        color:#516C5F;
+    }
+    
+    header nav ul li a:hover{
+        font-size: 1rem;
+        color:#9EA396;
+    }
+    
+    
     h1 {
-        font-size: 5.5rem;
+       font-size: 4rem;
+   }
+
+    .aboutMe img {
+        height: 13.25rem;
+        width: 13.25rem;
+        margin: 0 35%;
+        text-align: center;
     }
 
-    #daishaLogo {
-        font-size: 1rem;
+    .aboutMe p {
+        border: none;
     }
 
-    #devsLogo {
-        font-size: 1rem;
+
+    .myWorkImg {
+        width: 23rem;
+        height: 14rem;
     }
+
+    .title-descr {
+        padding: 0 1rem;
+    }
+
+    .skill img {
+        height: 12rem;
+        width: 12rem;
+    }
+
 }
 
 
+/* Styling for Laptop - 1024px */
+@media (min-width: 769px) and (max-width: 1025px) {
+    .project {
+        margin: 1.5rem 1.5rem 6rem;
+    }
+    
+    header nav ul {
+    display: flex;
+    font-size: 1rem;
+    }
+    
+    header nav ul li a{
+        color:#516C5F;
+    }
+    
+    header nav ul li a:hover{
+        font-size: 1rem;
+        color:#9EA396;
+    }
+    
+    
+    h1 {
+       font-size: 4rem;
+   }
+
+    .aboutMe {
+        display: block;
+    }
+
+    .aboutMe img {
+        height: 13.25rem;
+        width: 13.25rem;
+        margin: 0 35%;
+        text-align: center;
+    }
+
+    .aboutMe p {
+        border: none;
+    }
+
+
+    .myWorkImg {
+        width: 28rem;
+        height: 19rem;
+    }
+
+    .title-descr {
+        padding: 0 1rem;
+    }
+
+    .skill img {
+        height: 12rem;
+        width: 12rem;
+    }
+
+}
